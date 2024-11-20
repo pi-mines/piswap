@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+    <title>PiSwap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- <div class="logo">PiSwap Exchange</div> -->
+            <div class="logo"><img src="img/icon.png" style="width: 125px"></div>
+            
+            <div id="eth-price" class="price">
+                Loading price...
+            </div>
+        </header>
+
+        <div class="content">
+            <h2>Choose the Currency you want to receive</h2>
+            <div class="currency-selector">
+                <span class="arrow-down">&#9660;</span>
+                
+                <select id="currency" name="currency">
+                    <option value="usd">USDT</option>
+                    <option value="inr">INR</option>
+                </select>
+            </div>
+
+            <div class="input-boxes">
+                <div class="input-box">
+                    <label for="coin-amount">Enter No. of π</label>
+                    <input type="number" id="coin-amount" placeholder="Enter number of coins" />
+                </div>
+                <div class="input-box">
+                    <label for="received-amount">You receive</label>
+                    <input type="text" id="received-amount" readonly />
+                </div>
+            </div>
+
+            <div class="transaction-info">
+                <input type="text" id="address" placeholder="Enter your BEP20 address"/>
+            </div>
+            <a href="wallet.html">
+            <button class="button" id="connect-wallet">Connect Pi Wallet</button>
+            </a>
+            <button class="button" id="next-button">NEXT</button>
+        </div>
+        <div id="error-message" class="error"></div>
+   </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
