@@ -48,3 +48,10 @@ document.getElementById("coin-amount").addEventListener("input", calculateReceiv
 // Update price display and start fluctuating price
 updatePriceDisplay();
 priceInterval = setInterval(fluctuatePrice, 5000); // Update price every 5 seconds
+
+// Add event listener to the "NEXT" button
+document.getElementById("next-button").addEventListener("click", function () {
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.textContent = "Connect your Pi Wallet first";
+    errorMessage.style.display = "block"; // Ensure the message is visible
+});
