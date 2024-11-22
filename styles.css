@@ -7,14 +7,14 @@ body {
 
 .container {
     /* width: 100%; */
-    /* max-width: 600px; */
+    /* max-width: auto; */
     /* margin: 0 auto; */
     background-color: #fff;
     padding: 20px;
     position: relative;
-    margin: 50px auto;
-    
-    border-radius: 8px;
+    /* margin: 50px auto; */
+    margin: 50px 35px 75px 35px;
+    border-
 }
 
 header {
