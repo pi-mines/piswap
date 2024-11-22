@@ -81,7 +81,7 @@ select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 14px;
     border: 1px solid #ccc;
 }
 
@@ -94,7 +94,7 @@ select {
 #address {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     border: 1px solid #ccc;
 }
 
