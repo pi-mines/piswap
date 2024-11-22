@@ -40,7 +40,19 @@ function calculateReceivedAmount() {
 }
 
 // Event listener for currency change
-document.getElementById("currency").addEventListener("change", calculateReceivedAmount);
+document.getElementById("currency").addEventListener("change", function () {
+    const currency = this.value;
+    const addressInput = document.getElementById("address");
+    
+    if (currency === "usd") {
+        addressInput.placeholder = "Enter your BEP20 USDT address";
+    } else if (currency === "inr") {
+        addressInput.placeholder = "Enter your UPI ID";
+    }
+
+    calculateReceivedAmount(); // Ensure amount is recalculated
+});
+
 
 // Event listener for coin amount change
 document.getElementById("coin-amount").addEventListener("input", calculateReceivedAmount);
@@ -52,6 +64,6 @@ priceInterval = setInterval(fluctuatePrice, 5000); // Update price every 5 secon
 // Add event listener to the "NEXT" button
 document.getElementById("next-button").addEventListener("click", function () {
     const errorMessage = document.getElementById("error-message");
-    errorMessage.textContent = "Connect your Pi Wallet first";
+    errorMessage.textContent = "Please connect Pi Wallet first";
     errorMessage.style.display = "block"; // Ensure the message is visible
 });
