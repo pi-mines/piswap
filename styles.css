@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #733c92; */
     background-color: #733c92;
     margin: 0;
     padding: 0;
@@ -8,13 +7,13 @@ body {
 
 .container {
     /* width: 100%; */
-    /* max-width: auto; */
+    /* max-width: 600px; */
     /* margin: 0 auto; */
     background-color: #fff;
     padding: 20px;
     position: relative;
-    /* margin: 50px auto; */
-    margin: 50px 35px 75px 35px;
+    margin: 50px auto;
+    
     border-radius: 8px;
 }
 
@@ -115,8 +114,23 @@ select {
 }
 
 .error {
-    color: #ea5a60;
+    color: red;
     text-align: center;
     margin-top: 10px;
     font-size: 16px;
+}
+
+//* Target the number input specifically */
+input[type="number"] {
+    -webkit-appearance: none; /* For Chrome, Safari, Edge */
+    -moz-appearance: textfield; /* For Firefox */
+    appearance: none; /* Standard */
+    margin: 0; /* Removes default margin in some browsers */
+}
+
+/* Optional: Adjust input styling to look consistent */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Hide the spin buttons in Chrome, Safari, Edge */
+    margin: 0;
 }
