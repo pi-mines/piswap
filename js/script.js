@@ -14,7 +14,7 @@ function fluctuatePrice() {
 
 function updatePriceDisplay() {
     document.getElementById("eth-price").innerHTML = `
-        USD: $${currentPriceUSD}<br>
+        USDT: $${currentPriceUSD}<br>
         INR: ₹${currentPriceINR}
     `;
     calculateReceivedAmount();
